@@ -1,0 +1,6 @@
+framework module Pods_FoldView {
+  umbrella header "Pods-FoldView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,12 @@
+PODS:
+  - FoldingCell (1.0.0)
+
+DEPENDENCIES:
+  - FoldingCell (~> 1.0)
+
+SPEC CHECKSUMS:
+  FoldingCell: ca0b0f73a853143bf7d968c04a6604d25fbf1af7
+
+PODFILE CHECKSUM: a5d7d05758c293ab3e88dae7cf5dfda6e6939986
+
+COCOAPODS: 1.0.1

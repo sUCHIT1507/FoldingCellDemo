@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j4z-L2-iMF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fold Cell View Controller-->
+        <scene sceneID="SOK-sF-WLs">
+            <objects>
+                <viewController id="j4z-L2-iMF" customClass="FoldCellViewController" customModule="FoldView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wJB-Ut-b8W"/>
+                        <viewControllerLayoutGuide type="bottom" id="DBj-aN-8Ij"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hUH-tm-uxh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="493" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ze5-4g-5wH">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="548" id="7Xg-fg-G5w" customClass="FoldViewTableViewCell" customModule="FoldView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="548"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Xg-fg-G5w" id="Dsp-es-Isw">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="547"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VV3-L0-Zsu">
+                                                    <rect key="frame" x="8" y="163" width="584" height="347"/>
+                                                    <subviews>
+                                                        <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTI-LS-6cR" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="104" width="568" height="56"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="dny-z7-8j7"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GyK-Hm-nhk" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="265" width="568" height="53"/>
+                                                            <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="53" id="ppl-M5-xCA"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view alpha="0.69999998807907104" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IOa-uE-Hl9" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="181" width="568" height="58"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="58" id="lgO-QK-2Z9"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdc-y3-jKx">
+                                                            <rect key="frame" x="8" y="13" width="568" height="70"/>
+                                                            <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="1AQ-d5-xcC"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Ugi-jg-vxN"/>
+                                                                <constraint firstAttribute="height" constant="70" id="w9b-l9-XzS"/>
+                                                            </constraints>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="Ugi-jg-vxN"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Cdc-y3-jKx" firstAttribute="top" secondItem="VV3-L0-Zsu" secondAttribute="top" constant="13" id="43N-8Q-tj6"/>
+                                                        <constraint firstItem="GyK-Hm-nhk" firstAttribute="leading" secondItem="VV3-L0-Zsu" secondAttribute="leading" constant="8" id="DpE-HV-9Ca"/>
+                                                        <constraint firstItem="GyK-Hm-nhk" firstAttribute="top" secondItem="IOa-uE-Hl9" secondAttribute="bottom" constant="24" id="Flo-Cx-iQY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="IOa-uE-Hl9" secondAttribute="trailing" constant="8" id="Frj-UL-OPa"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GyK-Hm-nhk" secondAttribute="bottom" constant="24" id="IGx-0G-mQw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uTI-LS-6cR" secondAttribute="trailing" constant="8" id="T2A-UG-tPv"/>
+                                                        <constraint firstItem="IOa-uE-Hl9" firstAttribute="top" secondItem="uTI-LS-6cR" secondAttribute="bottom" constant="8" id="Yja-he-JAn"/>
+                                                        <constraint firstAttribute="height" constant="347" id="cMm-3X-fQu"/>
+                                                        <constraint firstItem="uTI-LS-6cR" firstAttribute="top" secondItem="Cdc-y3-jKx" secondAttribute="bottom" constant="21" id="m4y-wS-5af"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Cdc-y3-jKx" secondAttribute="trailing" constant="8" id="nf2-7C-8Q4"/>
+                                                        <constraint firstItem="uTI-LS-6cR" firstAttribute="leading" secondItem="VV3-L0-Zsu" secondAttribute="leading" constant="8" id="p6R-SD-Aib"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GyK-Hm-nhk" secondAttribute="trailing" constant="8" id="vFc-tz-9FR"/>
+                                                        <constraint firstItem="Cdc-y3-jKx" firstAttribute="leading" secondItem="VV3-L0-Zsu" secondAttribute="leading" constant="8" id="vfp-zw-pba"/>
+                                                        <constraint firstItem="IOa-uE-Hl9" firstAttribute="leading" secondItem="VV3-L0-Zsu" secondAttribute="leading" constant="8" id="wI0-hq-eDj"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1L-SZ-qWP" customClass="RotatedView" customModule="FoldingCell">
+                                                    <rect key="frame" x="8" y="18" width="584" height="70"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="To9-74-u3G"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="b1L-SZ-qWP" secondAttribute="trailing" constant="8" id="0WP-oL-he8"/>
+                                                <constraint firstItem="VV3-L0-Zsu" firstAttribute="top" secondItem="Dsp-es-Isw" secondAttribute="topMargin" constant="155" identifier="containerViewTop" id="2Uk-xn-5Qq"/>
+                                                <constraint firstItem="VV3-L0-Zsu" firstAttribute="leading" secondItem="Dsp-es-Isw" secondAttribute="leading" constant="8" id="493-my-IVX"/>
+                                                <constraint firstItem="b1L-SZ-qWP" firstAttribute="leading" secondItem="Dsp-es-Isw" secondAttribute="leading" constant="8" id="Rda-Ix-eK7"/>
+                                                <constraint firstAttribute="trailing" secondItem="VV3-L0-Zsu" secondAttribute="trailing" constant="8" id="pvH-Ip-DqP"/>
+                                                <constraint firstItem="b1L-SZ-qWP" firstAttribute="top" secondItem="Dsp-es-Isw" secondAttribute="topMargin" constant="10" identifier="forgroundViewTop" id="tmW-hO-xMl"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="itemCount">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="containerView" destination="VV3-L0-Zsu" id="0Jm-e7-jT2"/>
+                                            <outlet property="containerViewTop" destination="2Uk-xn-5Qq" id="1iv-yY-Fe0"/>
+                                            <outlet property="foregroundView" destination="b1L-SZ-qWP" id="ozc-FZ-OYC"/>
+                                            <outlet property="foregroundViewTop" destination="tmW-hO-xMl" id="4Do-We-8eG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="j4z-L2-iMF" id="ZZE-KP-QA9"/>
+                                    <outlet property="delegate" destination="j4z-L2-iMF" id="BAa-dw-74P"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ze5-4g-5wH" firstAttribute="centerY" secondItem="hUH-tm-uxh" secondAttribute="centerY" id="bVh-eg-ayq"/>
+                            <constraint firstItem="ze5-4g-5wH" firstAttribute="centerX" secondItem="hUH-tm-uxh" secondAttribute="centerX" id="kf8-78-VTW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ze5-4g-5wH" id="2MO-wz-uhq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXF-9D-zEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="258" y="227"/>
+        </scene>
+        <!--Fold Cell View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FoldCellViewController" customModule="FoldView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="544" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuu-L2-DNr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="544" id="nKU-4k-cuG" customClass="FoldViewTableViewCell" customModule="FoldView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="544"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nKU-4k-cuG" id="lJ4-6r-jgd">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="543"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqv-4V-am6" customClass="RotatedView" customModule="FoldingCell">
+                                                    <rect key="frame" x="8" y="8" width="584" height="122"/>
+                                                    <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="122" id="nqr-6G-axU"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzK-fT-cro">
+                                                    <rect key="frame" x="8" y="163" width="584" height="342"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYR-b5-3Tm" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="21" width="568" height="56"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="E53-bM-Drn"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Av3-Pp-cVl" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="98" width="568" height="58"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="58" id="XMN-FK-vba"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0B-gR-wpm" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="181" width="568" height="53"/>
+                                                            <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="53" id="btv-WL-34i"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0si-oB-7qa" customClass="RotatedView" customModule="FoldingCell">
+                                                            <rect key="frame" x="8" y="258" width="568" height="56"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="56" id="QaZ-yp-ap1"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="Av3-Pp-cVl" secondAttribute="trailing" constant="8" id="1iO-lC-2Bp"/>
+                                                        <constraint firstItem="GYR-b5-3Tm" firstAttribute="leading" secondItem="nzK-fT-cro" secondAttribute="leading" constant="8" id="5Al-3N-hoV"/>
+                                                        <constraint firstItem="Av3-Pp-cVl" firstAttribute="top" secondItem="GYR-b5-3Tm" secondAttribute="bottom" constant="21" id="7nZ-5W-C9H"/>
+                                                        <constraint firstAttribute="trailing" secondItem="0si-oB-7qa" secondAttribute="trailing" constant="8" id="CBq-2I-gE0"/>
+                                                        <constraint firstItem="Av3-Pp-cVl" firstAttribute="leading" secondItem="nzK-fT-cro" secondAttribute="leading" constant="8" id="CUe-BY-V69"/>
+                                                        <constraint firstItem="0si-oB-7qa" firstAttribute="leading" secondItem="nzK-fT-cro" secondAttribute="leading" constant="8" id="X72-wY-1q3"/>
+                                                        <constraint firstItem="GYR-b5-3Tm" firstAttribute="top" secondItem="nzK-fT-cro" secondAttribute="top" constant="21" id="Zgm-PO-r0v"/>
+                                                        <constraint firstItem="0si-oB-7qa" firstAttribute="top" secondItem="w0B-gR-wpm" secondAttribute="bottom" constant="24" id="eHx-A4-h3W"/>
+                                                        <constraint firstItem="w0B-gR-wpm" firstAttribute="top" secondItem="Av3-Pp-cVl" secondAttribute="bottom" constant="25" id="gH4-f1-U9L"/>
+                                                        <constraint firstAttribute="trailing" secondItem="GYR-b5-3Tm" secondAttribute="trailing" constant="8" id="iev-Zu-G3U"/>
+                                                        <constraint firstItem="w0B-gR-wpm" firstAttribute="leading" secondItem="nzK-fT-cro" secondAttribute="leading" constant="8" id="o13-Qf-IYp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="w0B-gR-wpm" secondAttribute="trailing" constant="8" id="pWy-c3-ORK"/>
+                                                        <constraint firstAttribute="height" constant="342" id="qX3-D2-DVt"/>
+                                                        <constraint firstAttribute="bottom" secondItem="0si-oB-7qa" secondAttribute="bottom" constant="28" id="tTK-8s-BNr"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nzK-fT-cro" firstAttribute="trailing" secondItem="lJ4-6r-jgd" secondAttribute="trailingMargin" id="3L1-7K-APa"/>
+                                                <constraint firstItem="nzK-fT-cro" firstAttribute="top" secondItem="lJ4-6r-jgd" secondAttribute="topMargin" constant="155" id="BlY-PO-l8M"/>
+                                                <constraint firstItem="nzK-fT-cro" firstAttribute="top" secondItem="Zqv-4V-am6" secondAttribute="bottom" constant="33" id="F4Y-5v-45h"/>
+                                                <constraint firstItem="Zqv-4V-am6" firstAttribute="trailing" secondItem="lJ4-6r-jgd" secondAttribute="trailingMargin" id="PM1-hC-QWN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nzK-fT-cro" secondAttribute="bottom" constant="30" id="Sll-Rd-0SY"/>
+                                                <constraint firstItem="nzK-fT-cro" firstAttribute="leading" secondItem="lJ4-6r-jgd" secondAttribute="leadingMargin" id="Zfa-o9-8JG"/>
+                                                <constraint firstItem="Zqv-4V-am6" firstAttribute="top" secondItem="lJ4-6r-jgd" secondAttribute="top" constant="8" id="f4X-5d-iwf"/>
+                                                <constraint firstItem="Zqv-4V-am6" firstAttribute="leading" secondItem="lJ4-6r-jgd" secondAttribute="leadingMargin" id="okW-vV-kAc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="containerView" destination="nzK-fT-cro" id="NcG-dX-6da"/>
+                                            <outlet property="foregroundView" destination="Zqv-4V-am6" id="Ydh-MF-thm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="nM2-dQ-h30"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Ptq-qr-Unf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tuu-L2-DNr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TkG-1t-V3N"/>
+                            <constraint firstItem="tuu-L2-DNr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hcV-YH-10H"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="965"/>
+        </scene>
+    </scenes>
+</document>
