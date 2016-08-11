@@ -12,7 +12,6 @@
 		55B53F6F1D5C4F7500B6A0C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B53F6D1D5C4F7500B6A0C8 /* Main.storyboard */; };
 		55B53F711D5C4F7500B6A0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55B53F701D5C4F7500B6A0C8 /* Assets.xcassets */; };
 		55B53F741D5C4F7500B6A0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B53F721D5C4F7500B6A0C8 /* LaunchScreen.storyboard */; };
-		55B53F7C1D5C597700B6A0C8 /* FoldViewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B53F7B1D5C597700B6A0C8 /* FoldViewTableViewController.swift */; };
 		55B53F7E1D5C59A200B6A0C8 /* FoldViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B53F7D1D5C59A200B6A0C8 /* FoldViewTableViewCell.swift */; };
 		55B53FA21D5C87BA00B6A0C8 /* FoldCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B53FA11D5C87BA00B6A0C8 /* FoldCellViewController.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		55B53F701D5C4F7500B6A0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55B53F731D5C4F7500B6A0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55B53F751D5C4F7500B6A0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55B53F7B1D5C597700B6A0C8 /* FoldViewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldViewTableViewController.swift; sourceTree = "<group>"; };
 		55B53F7D1D5C59A200B6A0C8 /* FoldViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldViewTableViewCell.swift; sourceTree = "<group>"; };
 		55B53FA11D5C87BA00B6A0C8 /* FoldCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldCellViewController.swift; sourceTree = "<group>"; };
 		5619FE880A00459128DF0D2C /* Pods-FoldView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoldView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoldView/Pods-FoldView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 				55B53F701D5C4F7500B6A0C8 /* Assets.xcassets */,
 				55B53F721D5C4F7500B6A0C8 /* LaunchScreen.storyboard */,
 				55B53F751D5C4F7500B6A0C8 /* Info.plist */,
-				55B53F7B1D5C597700B6A0C8 /* FoldViewTableViewController.swift */,
 				55B53F7D1D5C59A200B6A0C8 /* FoldViewTableViewCell.swift */,
 				55B53FA11D5C87BA00B6A0C8 /* FoldCellViewController.swift */,
 			);
@@ -216,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B53F7C1D5C597700B6A0C8 /* FoldViewTableViewController.swift in Sources */,
 				55B53F7E1D5C59A200B6A0C8 /* FoldViewTableViewCell.swift in Sources */,
 				55B53F6A1D5C4F7500B6A0C8 /* AppDelegate.swift in Sources */,
 				55B53FA21D5C87BA00B6A0C8 /* FoldCellViewController.swift in Sources */,
